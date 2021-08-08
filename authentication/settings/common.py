@@ -43,11 +43,25 @@ CORE_APPS = (
     "django.contrib.staticfiles",
 )
 
-THIRD_PARTY_APPS = ()
+THIRD_PARTY_APPS = (
+    "phonenumber_field",
+    "rest_framework",
+    "rest_framework.authtoken",
+)
 
-OUR_APPS = ("base",)
+OUR_APPS = ("accounts",)
 
 INSTALLED_APPS = CORE_APPS + OUR_APPS + THIRD_PARTY_APPS
+
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
+}
+
+AUTH_USER_MODEL = "accounts.user"
 
 MIDDLEWARE = (
     "django.contrib.sessions.middleware.SessionMiddleware",
