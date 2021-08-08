@@ -57,3 +57,33 @@ To access webserver, run the following command
 ```bash
 python manage.py runserver
 ```
+
+## Endpoints
+
+1. **GET Request:**
+
+   `end-point: accounts/api/register/`
+
+   Accepted Response : status 200 OK
+
+   Error Response : status 404 Not Found
+
+   `end-point: accounts/api/users/<username>`
+
+   Accepted Response : status 200 OK
+
+   Error Response : status 404 Not Found
+
+2. **Post Request:**
+
+   `accounts/api/register/`
+
+   Accepted Response : status 201 Created
+
+   Error Response : status 400 Bad Request
+
+   `accounts/api/login/`
+
+   Accepted Response : status 201 Created
+
+   Error Response :status 400 Bad Request
