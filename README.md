@@ -4,28 +4,20 @@
 
 Create an API Interface for user authentication.
 
-<!-- ## Application overview -
+## Application overview -
 
-- Patient data can be added , deleted , updated or retrieved.
-- On homepage there is a list of all the patients.
-- The patient object has the following fields :
-  -First Name
-  -Last Name
-  -Gender
-  -Age
-  -Disease (Problem)
-  -Doctor name
-  -Doctor fees (default 500)
-  -Started meds on date
+- User registration , login , list of all users with appropriate errors and status.
 
 ## Live Links -
 
+**Postman Collections:** [https://www.getpostman.com/collections/13abf8632b5f2983a733](https://www.getpostman.com/collections/13abf8632b5f2983a733)
 **Heroku Hosted Link** : [https://patient-backend-django.herokuapp.com/](https://patient-backend-django.herokuapp.com/)
 
 ## Demo Credentials -
 
 **Username:** admin
-**Password:** pass -->
+**Email:** admin@gmail.com
+**Password:** pass
 
 ## Setup Instructions
 
