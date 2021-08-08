@@ -7,8 +7,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.backends import TokenBackend
 from django.contrib.auth import authenticate
 from rest_framework.views import APIView
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.status import (
-    HTTP_400_BAD_REQUEST,
     HTTP_404_NOT_FOUND,
     HTTP_200_OK,
 )
@@ -55,6 +55,8 @@ class RegisterAPIView(generics.ListCreateAPIView):
 
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = "__all__"
 
     def get_serializer_context(self, *args, **kwargs):
         return {"request": self.request}

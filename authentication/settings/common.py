@@ -48,6 +48,7 @@ THIRD_PARTY_APPS = (
     "phonenumber_field",
     "rest_framework",
     "rest_framework.authtoken",
+    "django_filters",
 )
 
 OUR_APPS = ("accounts",)
