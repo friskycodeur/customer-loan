@@ -1,16 +1,18 @@
-# Django - Authentication
+# Customer-Loan Application
 
 ## Objective -
 
-Create an API Interface for user authentication.
+Create an Interface for csv uploads of customer-loan data and show the details on screen via API.
 
 ## Application overview -
 
-- User registration , login , list of all users with appropriate errors and status.
+- Tables for Customer , Branch Data, Customer Home Address Data,Customer Office Data,Loan Amount Data.
+- Functionality to upload a csv with the data for the above tables and saves data in all respective columns.
+- Customer is the foreign key in all the other tables.
+- CSV Format is at the end of this readme file.
 
 ## Live Links -
 
-**Postman Collections:** [https://www.getpostman.com/collections/13abf8632b5f2983a733](https://www.getpostman.com/collections/13abf8632b5f2983a733)
 **Heroku Hosted Link** : [https://customer-loan.herokuapp.com/](https://customer-loan.herokuapp.com/)
 
 ## Demo Credentials -
@@ -60,30 +62,37 @@ python manage.py runserver
 
 ## Endpoints
 
-1. **GET Request:**
+1. **Uploading CSV Files**
 
-   `end-point: accounts/api/register/`
+   `end-point: loan/csv`
+
+   CSV Format : [https://easyupload.io/dm1vo4](https://easyupload.io/dm1vo4)
+
+2. **GET Request:**
+
+   `end-point: loan/customer/`
 
    Accepted Response : status 200 OK
 
    Error Response : status 404 Not Found
 
-   `end-point: accounts/api/users/<username>`
+   `end-point: loan/branch/`
 
    Accepted Response : status 200 OK
 
    Error Response : status 404 Not Found
+   `end-point: loan/home/`
 
-2. **Post Request:**
+   Accepted Response : status 200 OK
 
-   `accounts/api/register/`
+   Error Response : status 404 Not Found
+   `end-point: loan/office/`
 
-   Accepted Response : status 201 Created
+   Accepted Response : status 200 OK
 
-   Error Response : status 400 Bad Request
+   Error Response : status 404 Not Found
+   `end-point: loan/loan/`
 
-   `accounts/api/login/`
+   Accepted Response : status 200 OK
 
-   Accepted Response : status 201 Created
-
-   Error Response :status 400 Bad Request
+   Error Response : status 404 Not Found
