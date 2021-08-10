@@ -1,0 +1,10 @@
+{% extends "__base.html" %}
+{% block container %}
+<div class="row mt-4"></div>
+
+<div class="row">
+    <div class="col mb-3">
+        Task Status : {{ task.get_status_str}}
+    </div>
+</div>
+{% endblock %}

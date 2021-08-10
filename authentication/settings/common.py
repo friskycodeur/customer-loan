@@ -51,7 +51,10 @@ THIRD_PARTY_APPS = (
     "django_filters",
 )
 
-OUR_APPS = ("accounts",)
+OUR_APPS = (
+    "accounts",
+    "loan",
+)
 
 INSTALLED_APPS = CORE_APPS + OUR_APPS + THIRD_PARTY_APPS
 
@@ -141,6 +144,7 @@ STATICFILES_FINDERS = (
 
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())

@@ -8,4 +8,5 @@ urlpatterns = [
     path("", include(router.urls)),
     path("admin/", admin.site.urls),
     path("accounts/api/", include("accounts.api.urls")),
+    path("loan/", include("loan.api.urls")),
 ]
