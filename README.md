@@ -11,7 +11,7 @@ Create an API Interface for user authentication.
 ## Live Links -
 
 **Postman Collections:** [https://www.getpostman.com/collections/13abf8632b5f2983a733](https://www.getpostman.com/collections/13abf8632b5f2983a733)
-**Heroku Hosted Link** : [https://patient-backend-django.herokuapp.com/](https://patient-backend-django.herokuapp.com/)
+**Heroku Hosted Link** : [https://customer-loan.herokuapp.com/](https://customer-loan.herokuapp.com/)
 
 ## Demo Credentials -
 

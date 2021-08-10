@@ -18,7 +18,7 @@ def csv_log_process(form_name, manage_command_name):
     log_file = open(join(log_dir, "csv.log"), "a+")
     error_log_file = open(join(log_dir, "csverror.log"), "a+")
     manage_py_location = join(os.getcwd(), "manage.py")
-    python_path = join(os.getcwd(), "pyenv", "bin", "python")
+    python_path = join(os.getcwd(), ".heroku", "python", "bin", "python")
     command_run_args = [
         python_path,
         manage_py_location,
